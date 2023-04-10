@@ -183,7 +183,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Create a Login Page
 - [x] Create a Register Page
-- [ ] Create a Authentication Page
+- [x] Create a Authentication Page
 - [ ] Create a Dashboard
 - [ ] Link a PostGres Database
 - [ ] Create Unit Tests

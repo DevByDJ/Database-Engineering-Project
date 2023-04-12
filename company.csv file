@@ -1,0 +1,20 @@
+company_id,name,industry,year_founded,location
+12,Apple,Technology,1976,"Cupertino, CA"
+32,Microsoft,Technology,1975,"Redmond, WA"
+43,Google,Technology,1998,Remote
+54,Oracle,Technology,1977,Multiple Locations
+65,Adobe,Technology,1982,Multiple Locations
+87,IBM,Banking,1911,"San Jose, CA"
+33,Vmware,Technology,1998,"Palo Alto, California"
+91,Zoom,Technology,2011,"San Jose, CA"
+23,Palantir,Technology,2003,"Denver, CO"
+45,Duolingo,Technology,2011,"Pittsburgh, PA"
+88,Unity Software,Technology,2004,"Austin, TX"
+10,Rivian,Automotive,2009,"Irvine, CA"
+27,Zillow,Real estate,2006,Remote
+82,Cognito Forms,Technology,2013,"Columbia, SC"
+49,Paramount,Cinema,1912,"Fort Lauderdale, FL"
+46,Uber,Technology,2009,"San Fancisco, CA"
+84,Arthrex,Medical,1981,"Naples,FL"
+34,Amazon,Technology,1994,Multiple Locations
+11,Meta,Technology,2004,Remote

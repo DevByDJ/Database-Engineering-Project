@@ -1,4 +1,3 @@
-const User = require('../models/database.js')
 const {validateUser} = require('../scripts/login')
 
 async function findUsername(firstName, lastName)

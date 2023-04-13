@@ -1,4 +1,3 @@
-const User = require('../models/database.js')
 
 function createNewUser (email, password, firstName, lastName)
 {

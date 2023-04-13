@@ -1,4 +1,4 @@
-const User = require('../models/database.js')
+const User = require('../tables/queries.js')
 
 async function validateUser (email, password)
 {

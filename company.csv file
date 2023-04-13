@@ -1,0 +1,20 @@
+company_id,name,industry,location
+12,Apple,Technology,"Cupertino, CA"
+32,Microsoft,Technology,"Redmond, WA"
+43,Google,Technology,Remote
+54,Oracle,Technology,Multiple Locations
+65,Adobe,Technology,Multiple Locations
+87,IBM,Banking,"San Jose, CA"
+33,Vmware,Technology,"Palo Alto, California"
+91,Zoom,Technology,"San Jose, CA"
+23,Palantir,Technology,"Denver, CO"
+45,Duolingo,Technology,"Pittsburgh, PA"
+88,Unity Software,Technology,"Austin, TX"
+10,Rivian,Automotive,"Irvine, CA"
+27,Zillow,Real estate,Remote
+82,Cognito Forms,Technology,"Columbia, SC"
+49,Paramount,Cinema,"Fort Lauderdale, FL"
+46,Uber,Technology,"San Fancisco, CA"
+84,Arthrex,Medical,"Naples,FL"
+34,Amazon,Technology,Multiple Locations
+11,Meta,Technology,Remote

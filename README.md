@@ -162,6 +162,35 @@ Use these instructions to clone the repository to a particular workstation.
    ```sh
    npm i
    ```
+   
+### Uploading Datasets(.csv files) to the PostGres Database
+
+After you've installed PostGres and pgAdmin, open SQL Shell(psql) and do the following:
+```
+CREATE DATABASE <name> ;
+```
+
+You can check to see if the Database has been created by entering:
+```
+\l
+```
+
+Next, connect to the database you just created:
+```
+\c <name of new database>
+```
+
+Once connected you can begin creating a new Table:
+```
+CREATE TABLE <name> (
+```
+
+Then proceed to add the attributes of the table based off a schema.
+Once the table is successfully created run the following command to transfer data from a .csv file to the new Table:
+
+```
+\copy <name of table> (column 1, column 2, column 3) FROM '<Path to the .csv file' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ESCAPE '"');
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

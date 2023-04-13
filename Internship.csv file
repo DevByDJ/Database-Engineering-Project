@@ -1,0 +1,20 @@
+job_id,company_id,tag_id,position_name,position_type,location,start_date,end_date,semester
+12345,12,2,Software Developer,Internship,"Cupertino, CA",5/15/2023,8/5/2023,Summer
+34565,32,3,Software Developer,Internship,"Redmond, WA",8/14/2023,12/15/2023,Fall
+47652,43,5,Data Engineer ,Internship,Remote,1/9/2024,5/6/2024,Spring
+83000,54,15,Application Development,Internship,Multiple Locations,1/9/2024,5/6/2024,Spring
+77845,65,11,Machine Learning Engineer,Internship,Multiple Locations,8/14/2023,12/15/2023,Fall
+33344,87,8,Frontend Developer,Internship,"San Jose, CA",5/15/2023,8/5/2023,Summer
+41822,33,12,Data Engineer ,Internship,"Palo Alto, California",1/9/2024,5/6/2024,Spring
+26564,91,14,Software Developer,Internship,"San Jose, CA",5/15/2023,8/5/2023,Summer
+77777,23,1,Software Developer,Internship,"Denver, CO",5/15/2023,8/5/2023,Summer
+13063,45,7,Software Engineer,Internship,"Pittsburgh, PA",8/14/2023,12/15/2023,Fall
+34546,88,11,Software Engineer,Internship,"Austin, TX",8/14/2023,12/15/2023,Fall
+54770,10,6,Product Development,Internship,"Irvine, CA",1/9/2024,5/6/2024,Spring
+83395,27,1,Software Developer,Internship,Remote,5/15/2023,8/5/2023,Summer
+14263,82,4,UX/UI Designer,Internship,"Columbia, SC",5/15/2023,8/5/2023,Summer
+18907,49,6,Frontend Developer,Internship,"Fort Lauderdale, FL",1/9/2024,5/6/2024,Spring
+97988,46,9,Frontend Developer,Internship,"San Fancisco, CA",1/9/2024,5/6/2024,Spring
+53930,84,3,QA Testing,Internship,"Naples,FL",5/15/2023,8/5/2023,Summer
+20754,34,14,Software Engineer,Internship,Multiple Locations,5/15/2023,8/5/2023,Summer
+58708,11,2,Software Engineer,Internship,Remote,5/15/2023,8/5/2023,Summer

@@ -150,7 +150,7 @@ sudo apt-get install -y nodejs
 ```
 
 
-### Installation
+## Installation
 
 Use these instructions to clone the repository to a particular workstation.
 
@@ -163,7 +163,7 @@ Use these instructions to clone the repository to a particular workstation.
    npm i
    ```
    
-### Uploading Datasets(.csv files) to the PostGres Database
+## Uploading Datasets(.csv files) to the PostGres Database
 
 After you've installed PostGres and pgAdmin, open SQL Shell(psql) and do the following:
 ```
@@ -194,7 +194,7 @@ Once the table is successfully created run the following command to transfer dat
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Running the Application
+## Running the Application
 
 When you have successfully installed the project and it's dependencies run the following command to start the web application
 

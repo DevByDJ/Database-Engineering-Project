@@ -149,6 +149,7 @@ curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Installation
 
@@ -162,6 +163,8 @@ Use these instructions to clone the repository to a particular workstation.
    ```sh
    npm i
    ```
+   
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
    
 ## Uploading Datasets(.csv files) to the PostGres Database
 

@@ -165,6 +165,23 @@ Use these instructions to clone the repository to a particular workstation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Running the Application
+
+When you have successfully installed the project and it's dependencies run the following command to start the web application
+
+```sh
+   npm start
+```
+
+It should then prompt you on the port that the application is being run i.e
+```sh
+   localhost:5000/login
+```
+
+Feel free to copy and paste it on your browser of choice to view the web application. 
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->

@@ -210,7 +210,7 @@ When you have successfully installed the project and it's dependencies run the f
 
 It should then prompt you on the port that the application is being run i.e
 ```sh
-   localhost:5000/login
+   localhost:3000/login
 ```
 
 Feel free to copy and paste it on your browser of choice to view the web application. 

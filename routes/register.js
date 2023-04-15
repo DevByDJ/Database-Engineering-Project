@@ -1,6 +1,6 @@
 const express = require('express')
 const {json} = require('express')
-const { createNewUser } = require('../scripts/register.js')
+const controller = require('../tables/student/controller')
 
 const router = express.Router()
 
@@ -12,35 +12,8 @@ router.get('/', (req, res) =>
   res.render('register')
 })
 
-router.post('/', async (req, res) =>
-{
 
-  try
-    {
-      const {email, password, firstName, lastName} = req.body
-      console.log('Peep: ', email, password, firstName, lastName)
-      const userCreated = await createNewUser(email, password, firstName, lastName)
-      if(userCreated)
-      {
-        res.status(200).redirect('login')
-        return
-      }
-      else
-      {
-        console.log('Peep: ', userCreated)
-        res.status(400).send({ error: "user could not be created!"})
-        return
-      }
-
-    }
-
-    catch (error)
-    {
-      res.sendStatus(500)
-      return
-    }
-  
-})
+router.post('/', controller.createStudent)
 
 
 module.exports = router

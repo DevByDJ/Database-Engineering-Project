@@ -64,11 +64,11 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#uploading-datasets-to-the-postgres-database">Uploading Datasets(.csv files)</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -216,6 +216,26 @@ Feel free to copy and paste it on your browser of choice to view the web applica
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Connecting the Web Application
+
+The project protects your database credentials from being viewed on the public repository by storing the credentials to access the local postgres database in a separate (ignored by git) file. Which means you will need to create your own file that holds the credentials by doing the following:
+
+1. Create an `.env` file in the root directory of the project.
+
+2. In the `.env` file add the following text
+
+```sh
+  DB_HOST='localhost'
+  DB_USER='postgres'
+  DB_PASSWORD='<Replace with your password>'
+  DB_NAME='<Replace with the name of your database>'
+  DB_PORT=5432
+```
+3. Save file and Run the application!
+
+Side Note: Your `.env` should never be pushed to the github repository. This is for security purposes!
+
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -226,7 +246,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -234,7 +253,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Create a Register Page
 - [x] Create a Authentication Page
 - [ ] Create a Dashboard
-- [ ] Link a PostGres Database
+- [x] Link a PostGres Database
 - [ ] Create Unit Tests
 - [ ] Create a CI/CD pipeline for future development
 

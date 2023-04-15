@@ -19,11 +19,9 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![MIT License][license-shield]](https://github.com/DevByDJ/Database-Engineering-Project/blob/master/LICENSE.txt)
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/danny-joseph-52206389/)
 
 
 
@@ -34,19 +32,18 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Software Engineering Repository Web Application</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/DevByDJ/Database-Engineering-Project/edit/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/DevByDJ/Database-Engineering-Project/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/DevByDJ/Database-Engineering-Project/issues">Request Feature</a>
   </p>
 </div>
 
@@ -83,18 +80,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![image](https://user-images.githubusercontent.com/89165878/230826706-89c04f98-9ff0-4776-a3de-d2bc58dca9ae.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+The Software Engineering Club Internship Finder is a web application designed to provide registered members of the Software Engineering club with access to a comprehensive and up-to-date repository of internship opportunities, as well as a system for managing and viewing club events. Users will be able to create a personalized profile to save individual opportunities and receive alerts about updates through the event system. The web application uses Node.js, Express.js, Postgres and JWT for authentication, and is designed to be user-friendly and accessible. The goal of the project is to help members of the club find internship opportunities more easily and stay engaged with the club community.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,14 +93,18 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+* ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
+* ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+* ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+* ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+* ![Gitea](https://img.shields.io/badge/Gitea-34495E?style=for-the-badge&logo=gitea&logoColor=5D9425)
+* ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,33 +117,103 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+This project requires and assumes you are working with a version of node.js. If you need assistance installing this package please following the instructions listed below:
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+**Windows**
 
-### Installation
+1. Install [Chocolatey](https://chocolatey.org/install), a package manager for Windows.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+powershell
+```
+choco install nodejs
+```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+**macOS**
+
+1. Install Homebrew, a package manager for macOS.
+
+```
+brew install node
+```
+
+**Linux**
+Debian, Ubuntu, and other Debian-based distributions
+
+1. Open a Terminal window.
+2. Update the package list, install the necessary build tools, and install Node.js:
+
+```
+sudo apt-get update
+sudo apt-get install -y build-essential
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Installation
+
+Use these instructions to clone the repository to a particular workstation.
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/DevByDJ/Database-Engineering-Project.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm i
+   ```
+   
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+   
+## Uploading Datasets(.csv files) to the PostGres Database
+
+After you've installed PostGres and pgAdmin, open SQL Shell(psql) and do the following:
+```
+CREATE DATABASE <name> ;
+```
+
+You can check to see if the Database has been created by entering:
+```
+\l
+```
+
+Next, connect to the database you just created:
+```
+\c <name of new database>
+```
+
+Once connected you can begin creating a new Table:
+```
+CREATE TABLE <name> (
+```
+
+Then proceed to add the attributes of the table based off a schema.
+Once the table is successfully created run the following command to transfer data from a .csv file to the new Table:
+
+```
+\copy <name of table> (column 1, column 2, column 3) FROM '<Path to the .csv file' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ESCAPE '"');
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Running the Application
+
+When you have successfully installed the project and it's dependencies run the following command to start the web application
+
+```sh
+   npm start
+```
+
+It should then prompt you on the port that the application is being run i.e
+```sh
+   localhost:5000/login
+```
+
+Feel free to copy and paste it on your browser of choice to view the web application. 
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
@@ -167,36 +230,17 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Create a Login Page
+- [x] Create a Register Page
+- [x] Create a Authentication Page
+- [ ] Create a Dashboard
+- [ ] Link a PostGres Database
+- [ ] Create Unit Tests
+- [ ] Create a CI/CD pipeline for future development
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+See the [open issues](https://github.com/DevByDJ/Database-Engineering-Project/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -240,13 +284,13 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/DevByDJ/Database-Engineering-Project/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/DevByDJ/Database-Engineering-Project/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

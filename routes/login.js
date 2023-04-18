@@ -1,8 +1,6 @@
-require('dotenv').config()
-
 const express = require('express')
 const {json} = require('express') 
-const jwt = require('jsonwebtoken')
+const controller = require('../tables/student/controller')
 
 const router = express.Router()
 
@@ -13,7 +11,7 @@ router.get('/', (req, res) =>
   res.render('login')
 })
 
-router.post('/', )
+router.post('/', controller.validateStudent)
 
 // Exports this module as a router to be called by the main router.
 module.exports = router

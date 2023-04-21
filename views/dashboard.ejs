@@ -14,105 +14,39 @@
   <body>
     <main>
       <section class="glass">
-        <div class="dashboard">
-          <div class="user">
-            <img src="./images/avatar.png" alt="" />
-            <h3 name="userName"><%= userName %></h3>
-            <p>Admin</p>
-          </div>
-          <div class="links">
-            <div class="link">
-              <img src="./images/searchIcon.png" alt="" />
-              <h2>Search</h2>
-            </div>
-            <div class="link">
-              <img src="./images/batchIcon.png" alt="" />
-              <h2>Batch</h2>
-            </div>
-            <div class="link">
-              <img src="./images/accountIcon.png" alt="" />
-              <h2>Account</h2>
-            </div>
-            <div class="link">
-              <img src="./images/settingsIcon.png" alt="" />
-              <h2>Settings</h2>
-            </div>
-          </div>
-          <div class="pro">
-            <h2>Join pro for free games.</h2>
-            <img src="./images/controller.png" alt="" />
-          </div>
-        </div>
+        <!-- ... -->
         <div class="games">
           <div class="status">
             <h1 id="dashboard-title">Dashboard</h1>
             <input type="text" />
+            <select id="sort">
+              <option value="">Sort by</option>
+              <option value="company">Company</option>
+              <option value="location">Location</option>
+              <option value="industry">Industry</option>
+              <option value="start_date">Start Date</option>
+              <option value="semester">Semester</option>
+            </select>
           </div>
-          <div class="cards">
-            <div class="card">
-              <img src="./images/assassins.png" alt="" />
-              <div class="card-info">
-                <h2>Assassins Creed Valhalla</h2>
-                <p>PS5 Version</p>
-                <div class="progress"></div>
+          <div class="cards" id="internship-list">
+            <% internships.forEach(function(internship) { %>
+              <div class="card" data-id="<%= internship.id %>">
+                <div class="card-info">
+                  <h2 data-field="company"><%= internship.company_name %></h2>
+                  <p data-field="location"><%= internship.location %></p>
+                  <p data-field="industry"><%= internship.industry %></p>
+                  <p data-field="start_date"><%= internship.start_date %></p>
+                  <p data-field="semester"><%= internship.semester %></p>
+                  <p><%= internship.tag_name %></p>
+                </div>
               </div>
-              <h2 class="percentage">60%</h2>
-            </div>
-            <div class="card">
-              <img src="./images/sackboy.png" alt="" />
-              <div class="card-info">
-                <h2>Sackboy A Great Advanture</h2>
-                <p>PS5 Version</p>
-                <div class="progress"></div>
-              </div>
-              <h2 class="percentage">60%</h2>
-            </div>
-            <div class="card">
-              <img src="./images/spiderman.png" alt="" />
-              <div class="card-info">
-                <h2>Spiderman Miles Morales</h2>
-                <p>PS5 Version</p>
-                <div class="progress"></div>
-              </div>
-              <h2 class="percentage">60%</h2>
-            </div>
+            <% }); %>
           </div>
         </div>
       </section>
     </main>
     <div class="circle1"></div>
     <div class="circle2"></div>
-    <script>
-      async function fetchData() {
-        const accessToken = localStorage.getItem('accessToken');
-    
-        if (accessToken) {
-          const response = await fetch('/protected', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': 'Bearer ' + accessToken, // Send the access token in the Authorization header
-            },
-          });
-
-          console.log("Access Token: ", accessToken)
-    
-          if (response.ok) {
-            const data = await response.json();
-            // Update the elements with the fetched data
-            document.getElementById('dashboard-title').textContent = data.title;
-          } else {
-            // Handle request error, e.g., redirect to the login page
-            window.location.href = '/login';
-          }
-        } else {
-          // Redirect to the login page or show an error
-          window.location.href = '/login';
-        }
-      }
-    
-      // Fetch the data when the dashboard is loaded
-      fetchData();
-    </script>
+    <script src="sort.js"></script>
   </body>
 </html>

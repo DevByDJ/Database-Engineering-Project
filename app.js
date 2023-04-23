@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const registerRouter = require('./routes/register.js') 
 const loginRouter = require('./routes/login.js')
@@ -24,7 +25,6 @@ app.use('/protected', protectedRouter)
 
 app.use('/dashboard', dashboardRouter)
 
-dotenv.config();
 app.get('/', (req, res) => 
 {
   console.log('App is running..')

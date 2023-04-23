@@ -1,7 +1,6 @@
 const express = require('express');
 const { json } = require('express');
 const db = require('./db');
-const { authenticateToken } = require('../authentication.js');
 
 const router = express.Router();
 
@@ -11,7 +10,7 @@ router.use(async (req, res, next) => {
   // ...
 });
 
-router.get('/', authenticateToken, async (req, res) => {
+router.get('/dashboard',  async (req, res) => {
   try {
     const internships = await db.any(`
       SELECT i.id, c.name as company_name, i.location, i.industry, i.start_date, i.semester, t.name as tag_name

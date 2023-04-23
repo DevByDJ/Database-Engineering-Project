@@ -3,7 +3,7 @@ const registerRouter = require('./routes/register.js')
 const loginRouter = require('./routes/login.js')
 const dashboardRouter = require('./routes/dashboard.js')
 const protectedRouter = require('./routes/protected.js')
-
+const dotenv = require('dotenv');
 const app = express()
 
 app.set('view engine', 'ejs')
@@ -23,6 +23,8 @@ app.use('/login', loginRouter)
 app.use('/protected', protectedRouter)
 
 app.use('/dashboard', dashboardRouter)
+
+dotenv.config();
 
 app.get('/', (req, res) => 
 {

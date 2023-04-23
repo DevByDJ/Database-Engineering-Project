@@ -10,7 +10,11 @@ router.use(async (req, res, next) => {
   // ...
 });
 
-router.get('/dashboard',  async (req, res) => {
+router.get('/test', (req, res) => {
+  res.send('Dashboard test route');
+});
+
+router.get('/',  async (req, res) => {
   try {
     const internships = await db.any(`
       SELECT i.id, c.name as company_name, i.location, i.industry, i.start_date, i.semester, t.name as tag_name

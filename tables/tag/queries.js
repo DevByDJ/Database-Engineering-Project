@@ -1,3 +1,4 @@
+// -- Tag Queries --
 const getTagByTagId='SELECT * FROM tag where tag.tag_id = $1'
 const getAllTags='SELECT * FROM tag'
 const createNewTag='INSERT into tag(tag_id, description) VALUES ($1, $2)'

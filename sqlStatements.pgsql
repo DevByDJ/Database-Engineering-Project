@@ -70,7 +70,7 @@ create view project_view as
     c.name as 'Company Name', c.industry
     from internship i 
         inner join internship_survey isu on i.job_id = isu.job_id
-            inner join student s on isu.student_id = s.student_id
+        inner join student s on isu.student_id = s.student_id
         left outer join tag t on i.tag_id = t.tag_id
         inner join company c on i.company_id = c.company_id;
 

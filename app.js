@@ -3,6 +3,9 @@ const registerRouter = require('./routes/register.js')
 const loginRouter = require('./routes/login.js')
 const dashboardRouter = require('./routes/dashboard.js')
 const protectedRouter = require('./routes/protected.js')
+const tagRouter = require('./routes/tag.js')
+const surveyRouter = require('./routes/survey.js')
+const tableRouter = require('./routes/view.js')
 
 const app = express()
 
@@ -23,6 +26,12 @@ app.use('/login', loginRouter)
 app.use('/protected', protectedRouter)
 
 app.use('/dashboard', dashboardRouter)
+
+app.use('/tag', tagRouter)
+
+app.use('/survey', surveyRouter)
+
+app.use('/table', tableRouter)
 
 app.get('/', (req, res) => 
 {

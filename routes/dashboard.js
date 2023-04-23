@@ -6,14 +6,6 @@ const router = express.Router();
 
 router.use(json());
 
-router.use(async (req, res, next) => {
-  // ...
-});
-
-router.get('/test', (req, res) => {
-  res.send('Dashboard test route');
-});
-
 router.get('/',  async (req, res) => {
   try {
     const internships = await db.any(`

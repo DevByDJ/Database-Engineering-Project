@@ -25,7 +25,6 @@ app.use('/protected', protectedRouter)
 app.use('/dashboard', dashboardRouter)
 
 dotenv.config();
-
 app.get('/', (req, res) => 
 {
   console.log('App is running..')

@@ -64,13 +64,11 @@ const allInternships = (request, response) => {
 //delete internship
 const deleteInternship = (request, response) => {
   const { job_id } = request.body;
-  db.query(queries.deleteInternship),
-    [job_id],
-    (error, resutls) => {
-      if (error) throw error;
+  db.query(queries.deleteInternship, [job_id], (error, resutls) => {
+    if (error) throw error;
 
-      response.status(201).send('Internship deleted!');
-    };
+    response.status(201).send('Internship deleted!');
+  });
 };
 
 module.exports = {

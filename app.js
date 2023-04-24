@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const registerRouter = require('./routes/register.js') 
 const loginRouter = require('./routes/login.js')
@@ -6,7 +7,7 @@ const protectedRouter = require('./routes/protected.js')
 const tagRouter = require('./routes/tag.js')
 const surveyRouter = require('./routes/survey.js')
 const tableRouter = require('./routes/view.js')
-
+const dotenv = require('dotenv');
 // -- The utilities the application uses --
 const app = express()
 

@@ -26,8 +26,8 @@ const createCompany = (request, response) => {
 
 //getting a single company from db
 const getCompany = (request, response) => {
-  const { name } = request.body;
-  db.query(queries.getCompany, [name], (error, results) => {
+  const { company_id } = request.body;
+  db.query(queries.getCompany, [company_id], (error, results) => {
     if (error) {
       throw error;
     }
@@ -36,16 +36,15 @@ const getCompany = (request, response) => {
 };
 
 //get all companies
-const getCompanies = (request, response) => {
-  db.query(queries.getCompanies),
-    (error, results) => {
-      if (error) throw error;
-      response.status(200).json(results.rows);
-    };
+const getAllCompanies = (request, response) => {
+  db.query(queries.getCompanies, (error, results) => {
+    if (error) throw error;
+    response.status(200).json(results.rows);
+  });
 };
 
 module.exports = {
   createCompany,
   getCompany,
-  getCompanies,
+  getAllCompanies,
 };

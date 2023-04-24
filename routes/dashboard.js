@@ -6,12 +6,19 @@ const router = express.Router();
 
 router.use(json());
 
-router.get('/',  async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const sortBy = req.query.sortBy || 'company_name'; // Set a default sorting column
 
-    // prevent SQL injection
-    const allowedSortColumns = ['company_name', 'location', 'industry', 'start_date', 'semester', 'tag_description'];
+    // prevent SQL injectionnpm
+    const allowedSortColumns = [
+      'company_name',
+      'location',
+      'industry',
+      'start_date',
+      'semester',
+      'tag_description',
+    ];
     if (!allowedSortColumns.includes(sortBy)) {
       throw new Error('Invalid sort column');
     }
@@ -26,7 +33,7 @@ router.get('/',  async (req, res) => {
     res.render('dashboard', { internships, sortBy });
   } catch (error) {
     console.error('Error fetching internships:', error.message);
-    console.error('Error details: ', error)
+    console.error('Error details: ', error);
     res.status(500).send('Error fetching internships');
   }
 });

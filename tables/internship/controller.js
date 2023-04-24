@@ -54,12 +54,11 @@ const getInternship = (request, response) => {
 
 //getting all internships in db
 const allInternships = (request, response) => {
-  db.query(queries.allInternships),
-    (error, results) => {
-      if (error) throw error;
+  db.query(queries.allInternships, (error, results) => {
+    if (error) throw error;
 
-      response.status(200).json(results.rows);
-    };
+    response.status(200).json(results.rows);
+  });
 };
 
 //delete internship

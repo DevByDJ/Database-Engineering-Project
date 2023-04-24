@@ -37,11 +37,10 @@ const getCompany = (request, response) => {
 
 //get all companies
 const getAllCompanies = (request, response) => {
-  db.query(queries.getCompanies),
-    (error, results) => {
-      if (error) throw error;
-      response.status(200).json(results.rows);
-    };
+  db.query(queries.getCompanies, (error, results) => {
+    if (error) throw error;
+    response.status(200).json(results.rows);
+  });
 };
 
 module.exports = {

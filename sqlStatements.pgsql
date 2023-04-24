@@ -27,6 +27,15 @@ select * from company;
 --list of tags
 select * from tag;
 
+-- Delete a student:
+DELETE FROM student WHERE student_id = '$1';
+
+-- Delete an internship:
+DELETE FROM internship WHERE job_id = '$1';
+
+-- Delete an internship survey:
+DELETE FROM internship_survey WHERE survey_id = $1;
+
 --insert statement for a new internship
 insert into internship(job_id, company_id, tag_id, position_name, position_type, location, start_date, end_date, semester)
     values('$1, $2, $3, $4, $5, $6, $7, $8, $9');
@@ -61,7 +70,7 @@ create view project_view as
     c.name as 'Company Name', c.industry
     from internship i 
         inner join internship_survey isu on i.job_id = isu.job_id
-            inner join student s on isu.student_id = s.student_id
+        inner join student s on isu.student_id = s.student_id
         left outer join tag t on i.tag_id = t.tag_id
         inner join company c on i.company_id = c.company_id;
 

@@ -3,7 +3,7 @@ const newCompany =
 
 const companyExist = 'SELECT company.name FROM company where company.name = $1';
 
-const getCompany = 'SELECT * FROM company where company.name = $1';
+const getCompany = 'SELECT * FROM company where company_id = $1';
 
 const getCompanies = 'SELECT * FROM company';
 

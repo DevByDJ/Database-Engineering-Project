@@ -9,7 +9,6 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.2",
     "mysql2": "^2.3.3",
-    "node": "^19.8.1",
     "pg": "^8.10.0",
     "pg-promise": "^11.4.3"
   },

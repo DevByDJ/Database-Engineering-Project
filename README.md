@@ -80,16 +80,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![image](https://user-images.githubusercontent.com/89165878/230826706-89c04f98-9ff0-4776-a3de-d2bc58dca9ae.png)
 
-![image](https://user-images.githubusercontent.com/89165878/232181257-721af31f-f1f7-4332-a8de-f591ff787387.png)
-
+![Login Page](https://user-images.githubusercontent.com/89165878/234165331-60b26159-273a-499a-a567-f0adc0322c02.png)
 
 
 The Software Engineering Club Internship Finder is a web application designed to provide registered members of the Software Engineering club with access to a comprehensive and up-to-date repository of internship opportunities, as well as a system for managing and viewing club events. Users will be able to create a personalized profile to save individual opportunities and receive alerts about updates through the event system. The web application uses Node.js, Express.js, Postgres and JWT for authentication, and is designed to be user-friendly and accessible. The goal of the project is to help members of the club find internship opportunities more easily and stay engaged with the club community.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With

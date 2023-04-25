@@ -53,9 +53,7 @@ const validateStudent = (request, response) => {
     }
 
     if (results.rowCount > 0) {
-      console.log('Results from Query: ' + JSON.stringify(results));
-      const accessToken = jwt.sign(email, process.env.ACCESS_TOKEN_SECRET);
-      response.json({ accessToken: accessToken }).status(200);
+      response.status(200).redirect('/dashboard')
     } else {
       response.send('LOG IN FAILED!').status(400);
     }

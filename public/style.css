@@ -5,20 +5,20 @@
 }
 
 h1 {
-  color: #426696;
+  color: rgba(0, 0, 0, 0.85);
   font-weight: 600;
   font-size: 3rem;
   opacity: 0.8;
 }
 h2,
 p {
-  color: #658ec6;
+  color: rgba(0, 0, 0, 0.85);
   font-weight: 500;
   opacity: 0.8;
 }
 
 h3 {
-  color: #426696;
+  color: rgba(0, 0, 0, 0.85);
   font-weight: 600;
   opacity: 0.8;
 }
@@ -26,7 +26,7 @@ h3 {
 main {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  background: linear-gradient(to right top, #007749, #004785); /* This is the only line of code that changes background color on dashboard */
   display: flex;
   align-items: center;
   justify-content: center;

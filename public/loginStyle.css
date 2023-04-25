@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right, #007749, #004785); /* fgcu color gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body {
 /* Login Card */
 .login-card {
     width: 450px;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.75); /* main front rectangle color */
     padding: 4rem;
     border-radius: 10px;
     position: relative;
@@ -29,7 +29,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, .15);
+    background: rgba(0, 108, 118);  /* Slanted tranparent rectangle behind main rectangle */
     transform: rotate(-6deg);
     border-radius: 10px;
     z-index: -1;
